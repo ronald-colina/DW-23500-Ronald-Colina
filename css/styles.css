@@ -24,7 +24,7 @@ main{
 
 }
 
-/* Menú Principal */
+/* MENÚ PRINCIPAL */
 .logo {
     width: 10vw;
     height: auto;
@@ -65,7 +65,7 @@ button:hover {
 
 }
 
-/* slider */
+/* SLIDER / BANNER */
 
 .hero {
     background-image: url("./../sources/img/robert-keane-rlbG0p_nQOU-unsplash.jpeg");
@@ -97,7 +97,7 @@ button:hover {
     text-shadow: 3px 3px 5px #000;
 }
 
-/* box menu */
+/* BOX MENU */
 .box {
     margin: 20px;
 }
