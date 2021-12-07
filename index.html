@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escuela Diseño Arcos</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
+    <script src="script.js" defer></script>
+    <title>Escuela Diseño Arcos</title>
 </head>
 <body>
-    <header>
-        <a href="./index.html">
+    <!-- LOGO -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="./index.html">
             <img class="logo" src="./sources/img/SVG/logo-blanco.svg" alt="logo">
-        </a
-        >
+            </a>
+        </div>
+        
+        <!--Toggle Button -->
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+
         <!-- Menú!-->
-        <nav>
-            
-            <ul class="nav__links">
+        <div class="navbar-links">
+            <ul>
                 <li>
                     <a href="./pages/malla-curricular.html">Malla Curricular</a>                    
                 </li>
@@ -37,12 +47,13 @@
                     <a href="./pages/escuela.html">Escuela</a>
                 </li>
             </ul>
+        </div>    
+        
         </nav>
-    </header>
-    
-    <main>
-        <!-- MAIN SECTION -->
 
+        <!-- MAIN SECTION -->
+        <main>
+        
         <!--Slider/Banner-->
         <section class="hero">
             <h1 class="hero__title">ROBERT KEANE</h1>
