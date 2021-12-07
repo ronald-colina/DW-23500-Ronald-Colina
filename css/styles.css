@@ -88,6 +88,7 @@ button:hover {
     font-size: 5vw;
     color: #fff;
     text-shadow: 3px 3px 5px #000;
+    margin: 0;
 
 }
 
@@ -96,40 +97,39 @@ button:hover {
     color: #fff;
     background-size: 10px;
     text-shadow: 3px 3px 5px #000;
+    margin: 0;
 }
 
 
 /* BOX MENU */
-.box {
-    margin: 20px;
-}
-
-.box__menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.box__menu{
+    display: grid;
+    grid-template-areas:
+    "malla docentes noticias"
+    "electivos horarios escuela";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
     align-items: center;
-    margin: 10px; 
+
 }
 
-.box h2 {
-    color: #fff;
-    padding: 100px;
+.box__menu h2 {
+    color: rgb(177, 30, 30);
     font-size: 2vw !important;  
-    text-transform: capitalize !important;
-}
-
-.box__malla {
-    background-color: #FB8500; 
-    width: 350px;
-    height: 350px;
-    text-align: center;
-    justify-content: center;
-    border-radius: 1em;
     
 }
 
-.box__docentes {
+
+.malla {
+    grid-area: malla;
+    background-color: #FB8500; 
+    width: 350px;
+    height: 350px;
+    border-radius: 1em;
+}
+
+.docentes {
+    grid-area: docentes;
     background-color: #023047; 
     width: 350px;
     height: 350px;
@@ -138,7 +138,8 @@ button:hover {
     border-radius: 1em;
 }
 
-.box__noticias {
+.noticias {
+    grid-area: noticias;
     background-color: #FFB703 ; 
     width: 350px;
     height: 350px;
@@ -147,7 +148,8 @@ button:hover {
     border-radius: 1em;
 }
 
-.box__electivos {
+.electivos {
+    grid-area: electivos;
     background-color: #219EBC; 
     width: 350px;
     height: 350px;
@@ -156,7 +158,8 @@ button:hover {
     border-radius: 1em;
 }
 
-.box__horarios {
+.horarios {
+    grid-area: horarios;
     background-color: #AC5B00; 
     width: 350px;
     height: 350px;
@@ -165,7 +168,8 @@ button:hover {
     border-radius: 1em;
 }
 
-.box__escuela {
+.escuela {
+    grid-area: escuela;
     background-color: #8ECAE6; 
     width: 350px;
     height: 350px;
@@ -173,7 +177,6 @@ button:hover {
     justify-content: center;
     border-radius: 1em;
 }
-
 
 /* NOTICIAS DESTACADAS*/
 .lines {
@@ -247,6 +250,7 @@ button:hover {
 }
 
 .column__two {
+        margin: 0;
 }    
 
 .column__three {
