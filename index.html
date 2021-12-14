@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/loader.css">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <script src="script.js" defer></script>
+
+
     <title>Escuela Diseño Arcos</title>
 </head>
+
 <body>
+    <!-- LOADER -->
+    <div class="loader">
+        <img class="logoloader" src="./sources/img/SVG/logo-blanco.svg" alt="logo">
+    </div>
+
     <!-- LOGO -->
     <nav class="navbar">
         <div class="logo">
@@ -61,13 +70,15 @@
         </section>
 
         <!-- Secondary Menu -->
-        <section class="box__menu" id="box"> 
-            <a href="./pages/malla-curricular.html">
-            <h2 class="malla">Malla Curricular</h2>
-            </a>
-            <a href="./pages/docentes.html">
-            <h2 class="docentes">Docentes</h2>
-            </a>
+        <section class="box__menu" id="box">
+            <div class="fade-right">
+                <a href="./pages/malla-curricular.html">
+                <h2 class="malla">Malla Curricular</h2>
+                </a>
+            </div> 
+                <a href="./pages/docentes.html">
+                <h2 class="docentes">Docentes</h2>
+                </a>
             
             <a href="./pages/noticias.html">
             <h2 class="noticias">Noticias</h2>
