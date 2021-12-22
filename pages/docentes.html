@@ -7,6 +7,7 @@
     <title>Docentes</title>
     <link rel="stylesheet" href=".././css/normalize.css">
     <link rel="stylesheet" href=".././css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="../script.js" defer></script>
 </head>
 <body>
@@ -58,48 +59,53 @@
 
         <section class="cards">
             <div class="card1">
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem Ipsum</p>
+                <div>
+                    <h3 class="cardtext">Luis Pérez</h3>
+                    <p class="cardtext">Director</p>
+                </div>
+
             </div>
 
             <div class="card2">
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem Ipsum</p>
+                <div class="cardtext">
+                    <h3 class="cardtext">Carla Rodriguez</h3>
+                    <p class="cardtext">Recuros Humanos</p>
+                </div>
             </div>
 
             <div class="card3">
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem Ipsum</p>
+                <h3 class="cardtext">Antonia Fernández</h3>
+                <p class="cardtext">Desarrolladora Web</p>
             </div>
             
             <div class="card4">
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem Ipsum</p>
+                <h3 class="cardtext">Julio Aldama</h3>
+                <p class="cardtext">Director Creativo</p>
             </div>
 
             <div class="card5">
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem Ipsum</p>
+                <h3 class="cardtext">Luisa Contreras</h3>
+                <p class="cardtext">Diseñadora</p>
             </div>
 
             <div class="card6">
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem Ipsum</p>
+                <h3 class="cardtext">María Jiménez</h3>
+                <p class="cardtext">Fotografa</p>
             </div>
 
             <div class="card7">
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem Ipsum</p>
+                <h3 class="cardtext">Eduardo Ramirez</h3>
+                <p class="cardtext">Creador de Contenidos</p>
             </div>
 
             <div class="card8">
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem Ipsum</p>
+                <h3 class="cardtext">Carlos González</h3>
+                <p class="cardtext">Asistente Administrativo</p>
             </div>
 
             <div class="card9">
-                <h1>Lorem Ipsum</h1>
-                <p>Lorem Ipsum</p>
+                <h3 class="cardtext">Luis Pérez</h3>
+                <p class="cardtext">Director</p>
             </div>
             
     </main>
@@ -109,27 +115,31 @@
         
         <!--Dirección -->
         <section class="direction">
-            <h1 class="direction">Dirección</h1>
-            <p>Av. Grecia 8991, Peñalolén<br>
+            <div class="row">
+                <div class="col-4">
+                    <h1 class="direction">Dirección</h1>
+                    <p>Av. Grecia 8991, Peñalolén<br>
             Recepción: +56 22 365 7000<br>
             recepcion@arcos.cl<br>
             admision@arcos.cl</p>
-                
-        </section>
+                </div>
+            
+                <div class="col-4 d-flex align-items-center d-flex justify-content-center">
+                    <div class="">
+                        <a href="http://arcos.cl">
+                            <img src="./../sources/img/logo_arcos_letras_blancas.svg" class="logo__arcos">
+                        </a>
+                    </div>
+                </div>
 
-        <!-- Logo -->
-        <section class="logo">
-            <a href="http://arcos.cl">
-            <img src="./../sources/img/logo_arcos_letras_blancas.svg" class="logo__arcos">
-        </a>
+                <div class="col-4 d-flex align-items-center d-flex justify-content-center">
+                    <div class="socialmedia">
+                        <a href="#" class="facebook"><img src="https://img.icons8.com/ios/50/ffffff/facebook--v1.png"/></a>
+                    <a href="#"><img src="https://img.icons8.com/ios/50/ffffff/instagram-new.png"/></a>
+                    </div>
+                </div>
+            </div>             
         </section>
-        
-        <!--Social Media -->
-        <section class="socialmedia">
-            <a href="#" class="facebook"><img src="https://img.icons8.com/ios/50/ffffff/facebook--v1.png"/></a>
-        <a href="#"><img src="https://img.icons8.com/ios/50/ffffff/instagram-new.png"/></a>
-        </section>
-
     </footer>
 </body>
 </html>
